@@ -8,22 +8,20 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-3-sm">
+        <div class="col-4" id="game-title">
             <h1>Crystal Collectors</h1>
         </div>
+        
     </div>
 
 
     <div class="row">
-        <div class="col-12">
+        <div class="col-5" id="game-manual">
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
             <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
@@ -33,28 +31,28 @@
     </div>
     <div id="game">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4" id="random-num">
                 <p>Random Number Here</p>
             </div>
             <div class="col-4">
-                <p>Wins: 0</p>
-                <p>Losses: 0</p>
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-9">
-                    <img src="assets/images/crystal-1.jpeg" class="img-fluid" alt="Responsive image">
-                    <img src="assets/images/crystal-2.jpeg" class="img-fluid" alt="Responsive image">
-                    <img src="assets/images/crystal-3.jpg" class="img-fluid" alt="Responsive image">
-                    <img src="assets/images/crystal-4.jpg" class="img-fluid" alt="Responsive image">
+            <div class="col-12-sm">
+                    <img src="assets/images/crystal-1.jpeg" id="crystal-1" class="img-fluid" alt="Responsive image">
+                    <img src="assets/images/crystal-2.jpeg" id="crystal-2" class="img-fluid" alt="Responsive image">
+                    <img src="assets/images/crystal-3.jpg" id="crystal-3" class="img-fluid" alt="Responsive image">
+                    <img src="assets/images/crystal-4.jpg" id="crystal-4" class="img-fluid" alt="Responsive image">
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-4-sm">
             <p>Your total score is:</p>
                 <div class="row">
                  <div class="col-4">
-                     <p>0</p>
+                     <p id="total-score">0</p>
                  </div>   
                 </div>
             </div>
@@ -80,7 +78,10 @@
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>

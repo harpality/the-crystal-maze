@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#game-title, #game-manual, #random-num, #wins, #losses, #total-score, #crystal-1, #crystal-2, #crystal-3, #crystal-4 {
+    border: red 3px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
