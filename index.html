@@ -13,16 +13,16 @@
 <body>
 
 
-    <div class="container">
+<div class="container">
     <div class="row">
-        <div class="col-4" id="game-title">
-            <h1>Crystal Collectors</h1>
+        <div class="col-12" id="game-title">
+            <h1>Crystals Collectors</h1>
         </div>
     </div>
 
 
     <div class="row">
-        <div class="col-5" id="game-manual">
+        <div class="col-12" id="game-manual">
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
             <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
@@ -35,33 +35,38 @@
     <div id="game">
 
         <div class="row">
-            <div class="col-4" id="random-num">
+            <div class="col-6" id="random-num">
                 <!-- <p>Random Number Here</p> -->
             </div>
-            <div class="col-4">
+            <div class="col-6" id="wins-losses">
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12-sm">
+            <div class="col-3">
                     <img src="assets/images/crystal-1.jpeg" id="crystal-1" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-3">
                     <img src="assets/images/crystal-2.jpeg" id="crystal-2" class="img-fluid" alt="Responsive image">
+            </div>     
+            <div class="col-3"> 
                     <img src="assets/images/crystal-3.jpg" id="crystal-3" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-3">
                     <img src="assets/images/crystal-4.jpg" id="crystal-4" class="img-fluid" alt="Responsive image">
             </div>
         </div>
+        
 
         <div class="row">
-            <div class="col-4-sm">
+            <div class="col-6" id="score-board">
             <p>Your total score is:</p>
-                <div class="row">
-                 <div class="col-4">
-                     <p id="total-score">0</p>
-                 </div>   
-                </div>
             </div>
+            <div class="col-6" id="total-score">
+                <p>0</p>
+            </div>   
         </div>
     </div>
 </div>

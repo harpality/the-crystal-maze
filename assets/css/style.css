@@ -1,11 +1,55 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #1b1b1b;
+    color: #d6d5d5;
+    font-size: .80em;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-#game-title, #game-manual, #random-num, #wins, #losses, #total-score, #crystal-1, #crystal-2, #crystal-3, #crystal-4 {
-    border: red 3px solid;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.container {
+    margin: auto;
+    width: 50%;
+}
+#game-title, #game-manual, #score-board, #wins-losses, #random-num, #wins, #losses, #crystals, #crystal-1, #crystal-2, #crystal-3, #crystal-4 {
+    border: #564184 3px outset;
+    margin-top: 12px;
+    background-color: #323232;
 }
 
+#total-score {
+    background-color: #323232;
+    border: #564184 3px outset;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 12px;
+    
+}
+
+
+#wins-losses {
+    padding-top: 8px;
+    text-align: center;
+   
+}
+
+#score-board {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 8px;
+}
+#game-manual {
+    padding-top: 12px;
+}
+
+#random-num {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 3em;
+}
+
+h1 {
+    font-weight: 420;
+}
+
+#game-title {
+   text-align: center;
+}
