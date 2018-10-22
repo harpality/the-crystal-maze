@@ -1,3 +1,6 @@
+var wins;
+var losses;
+
 var randomCrystal = Math.floor(Math.random() * 12) + 1;
 console.log(randomCrystal);
 
@@ -8,3 +11,4 @@ console.log(randomNum);
 $(document).ready(function() {
     $("#random-num").text(randomNum);
 });
+
