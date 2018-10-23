@@ -1,6 +1,7 @@
 var wins = 0;
 var losses = 0;
 var totalscore = 0;
+
 var randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
 var crystal1 = Math.floor(Math.random() * 12) + 1;
 var crystal2 = Math.floor(Math.random() * 12) + 1;
@@ -15,11 +16,6 @@ function crystalMethod() {
     crystal4 = Math.floor(Math.random() * 12) + 1;
 }
 
-console.log(crystal1);
-console.log(crystal2);
-console.log(crystal3);
-console.log(crystal4);
-console.log(randomNum);
 
 function gameStart() {
     randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
@@ -46,6 +42,11 @@ function winOrLose() {
     }
 }
 
+$(document).ready(function() {
+    gameStart();
+});
+
+
 $("#crystal-1").on("click", function() {
    totalscore += crystal1;
    $("#total-score").text(totalscore);
@@ -70,6 +71,8 @@ $("#crystal-4").on("click", function() {
    winOrLose();
 });
 
-$(document).ready(function() {
-    gameStart();
-});
+console.log(crystal1);
+console.log(crystal2);
+console.log(crystal3);
+console.log(crystal4);
+console.log(randomNum);
