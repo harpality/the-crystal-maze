@@ -28,6 +28,7 @@ body {
 #wins-losses {
     padding-top: 8px;
     text-align: center;
+    font-size: 1.2em;
    
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 #random-num {
-    padding-top: 5px;
+    padding-top: 10px;
     text-align: center;
     font-size: 3em;
 }
