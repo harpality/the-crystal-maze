@@ -20,6 +20,10 @@ function winSound() {
     document.getElementById('audiotag1').play();
 }
 
+function lossSound() {
+    document.getElementById('audiotag2').play();
+}
+
 function gameStart() {
     randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
     $("#random-num").text(randomNum);
@@ -42,6 +46,7 @@ function winOrLose() {
         console.log(losses);
         $("#losses").text(losses);
         $("#score-board").text("YOU LOSE");
+        lossSound();
         gameStart();
     }
 }
