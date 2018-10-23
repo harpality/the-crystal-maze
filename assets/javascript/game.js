@@ -16,6 +16,9 @@ function crystalMethod() {
     crystal4 = Math.floor(Math.random() * 12) + 1;
 }
 
+function winSound() {
+    document.getElementById('audiotag1').play();
+}
 
 function gameStart() {
     randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
@@ -31,6 +34,7 @@ function winOrLose() {
         console.log(wins);  
         $("#wins").text(wins);
         $("#score-board").text("YOU WIN");
+        winSound();
         gameStart();
 
     } else if (totalscore > randomNum) {
