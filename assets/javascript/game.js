@@ -24,11 +24,19 @@ function lossSound() {
     document.getElementById('audiotag2').play();
 }
 
+function playBkgrd() {
+document.getElementById("playMaze").addEventListener("click", function(){
+    document.getElementById('audiotag3').play();
+});
+
+}
+
 function gameStart() {
     randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
     $("#random-num").text(randomNum);
     totalscore = 0;
     $("#total-score").text(totalscore);
+    playBkgrd();
     crystalMethod();   
 }
 
