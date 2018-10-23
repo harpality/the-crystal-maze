@@ -8,6 +8,7 @@ var crystal2 = Math.floor(Math.random() * 12) + 1;
 var crystal3 = Math.floor(Math.random() * 12) + 1;
 var crystal4 = Math.floor(Math.random() * 12) + 1;
 
+var backgroundTune = document.getElementById("playMaze");
 
 function crystalMethod() {
     crystal1 = Math.floor(Math.random() * 12) + 1;
@@ -25,11 +26,20 @@ function lossSound() {
 }
 
 function playBkgrd() {
-document.getElementById("playMaze").addEventListener("click", function(){
-    document.getElementById('audiotag3').play();
+    backgroundTune.addEventListener("click", function(){
+    document.getElementById("audiotag3").muted = false;
+    document.getElementById("audiotag3").play();
+    document.getElementById("audiotag3").loop = true;
+
 });
 
 }
+
+function stopBkgrd() {
+    document.getElementById("stopMaze").addEventListener("click", function(){
+    document.getElementById("audiotag3").muted = true;
+  })
+};
 
 function gameStart() {
     randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
@@ -37,6 +47,7 @@ function gameStart() {
     totalscore = 0;
     $("#total-score").text(totalscore);
     playBkgrd();
+    stopBkgrd();
     crystalMethod();   
 }
 

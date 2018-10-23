@@ -10,7 +10,7 @@ body {
     width: 50%;
 }
 
-#playMaze {
+#playMaze, #stopMaze {
     margin-left: 5px;
     background-color: #1b1b1b;
     color: #d6d5d5;
