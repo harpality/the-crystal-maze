@@ -1,14 +1,13 @@
 var wins = 0;
 var losses = 0;
+var crystal1 = 0
+var crystal2 = 0;
+var crystal3 = 0;
+var crystal4 = 0;
+var randomNum = 0;
 var totalscore = 0;
-
-var randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
-var crystal1 = Math.floor(Math.random() * 12) + 1;
-var crystal2 = Math.floor(Math.random() * 12) + 1;
-var crystal3 = Math.floor(Math.random() * 12) + 1;
-var crystal4 = Math.floor(Math.random() * 12) + 1;
-
 var backgroundTune = document.getElementById("playMaze");
+
 
 function crystalMethod() {
     crystal1 = Math.floor(Math.random() * 12) + 1;
@@ -30,9 +29,7 @@ function playBkgrd() {
     document.getElementById("audiotag3").muted = false;
     document.getElementById("audiotag3").play();
     document.getElementById("audiotag3").loop = true;
-
-});
-
+  });
 }
 
 function stopBkgrd() {
@@ -45,11 +42,15 @@ function gameStart() {
     randomNum = Math.floor(Math.random() * (120 - 19)) + 19;
     $("#random-num").text(randomNum);
     totalscore = 0;
-    $("#total-score").text(totalscore);
+    updateScore();
     playBkgrd();
     stopBkgrd();
     crystalMethod();   
 }
+
+function updateScore() {
+    $("#total-score").text(totalscore);
+};
 
 function winOrLose() {
     if (randomNum === totalscore) {
@@ -77,25 +78,25 @@ $(document).ready(function() {
 
 $("#crystal-1").on("click", function() {
    totalscore += crystal1;
-   $("#total-score").text(totalscore);
+   updateScore();
    winOrLose();
 });
 
 $("#crystal-2").on("click", function() {
    totalscore += crystal2;
-   $("#total-score").text(totalscore);
+   updateScore();
    winOrLose();
 });
 
 $("#crystal-3").on("click", function() {
    totalscore += crystal3;
-   $("#total-score").text(totalscore);
+   updateScore();
    winOrLose();
 });
 
 $("#crystal-4").on("click", function() {
    totalscore += crystal4;
-   $("#total-score").text(totalscore);
+   updateScore();
    winOrLose();
 });
 
