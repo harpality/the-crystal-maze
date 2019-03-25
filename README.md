@@ -1,2 +1,5 @@
-# Crystals Collector Game 
-Deployed version available at: http://harpalassi.github.io/The-Crystal-Maze
+# The Crystal Maze
+
+![screenshot](assets/images/screenshot.png)
+
+🚀 Deployed at: http://harpalassi.github.io/The-Crystal-Maze
