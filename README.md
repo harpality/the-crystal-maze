@@ -12,7 +12,7 @@ You win the game by matching your total score to the random number, you lose the
 
 The value of each crystal is hidden from you until you click on it. Each time the game starts, the value of the crystal will change.
 
-🚀 Deployed at: http://harpalassi.github.io/the-crystal-maze
+🚀 Deployed at: http://harpality.github.io/the-crystal-maze
 
 ## Built With
 
